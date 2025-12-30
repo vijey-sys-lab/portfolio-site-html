@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Vijey Prasanna | Portfolio</title>
+<meta name="description" content="Vijey Prasanna – Developer, Founder of Devverse, EMCEE. Portfolio website.">
+
+<link rel="icon" href="images/vijey.jpg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- THEME TOGGLE -->
+<button id="themeToggle" title="Toggle theme">
+  <i class="bi bi-moon-fill"></i>
+</button>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p>Loading Vijey Prasanna...</p>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <canvas id="stars"></canvas>
+
+  <div class="hero-content reveal">
+    <img src="images/vijey.jpeg" class="profile" alt="Vijey">
+
+    <h1>Vijey Prasanna</h1>
+    <p class="subtitle">Entrepreneur • Developer • EMCEE</p>
+
+    <div class="buttons">
+      <a href="resume.pdf" class="btn primary">View Resume</a>
+      <a href="#about" class="btn outline">About Myself</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://instagram.com/vjysupermacy"><i class="bi bi-instagram"></i></a>
+      <a href="https://linkedin.com/in/vijey-prasanna-618b62305"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/vijey-sys-lab"><i class="bi bi-github"></i></a>
+      <a href="mailto:vijey.prasanna@devverse1.in"><i class="bi bi-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p class="about-text">
+    I’m Vijey Prasanna, a passionate developer, entrepreneur, and EMCEE.
+    I build real-world digital solutions, manage startups, and host professional
+    events with confidence and creativity. I focus on innovation, execution,
+    and creating meaningful impact through technology and communication.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal skills-section">
+  <canvas id="skills-bg"></canvas>
+
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card"><i class="bi bi-mic-fill"></i><h3>Anchoring</h3></div>
+    <div class="skill-card"><i class="bi bi-megaphone-fill"></i><h3>Emcee</h3></div>
+    <div class="skill-card"><i class="bi bi-graph-up-arrow"></i><h3>Investing</h3></div>
+    <div class="skill-card"><i class="bi bi-code-slash"></i><h3>Web Creation</h3></div>
+  </div>
+</section>
+
+<!-- ASSOCIATED BRANDS -->
+<section class="section reveal">
+  <h2>Associated Brands</h2>
+
+  <div class="orbit-container">
+    <div class="orbit">
+      <div class="orbit-item" style="--i:0"><img src="images/brands/devverse.png"></div>
+      <div class="orbit-item" style="--i:1"><img src="images/brands/emcee.jpg"></div>
+      <div class="orbit-item" style="--i:2"><img src="images/brands/glowcore.jpg"></div>
+      <div class="orbit-item" style="--i:3"><img src="images/brands/bossfoundation.webp"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VENTURES -->
+<section id="ventures" class="section alt reveal">
+  <h2>My Ventures</h2>
+
+  <div class="grid">
+    <div class="card venture">
+      <h3>DEVVERSE</h3>
+      <p>EdTech & IT company delivering internships and real-world projects.</p>
+      <div class="icon-links">
+        <a href="https://devverse1.in"><i class="bi bi-globe"></i></a>
+        <a href="https://www.instagram.com/devverse.in/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/deverse1/"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="card venture">
+      <h3>EMCEE VJY</h3>
+      <p>Professional anchor for college & public events.</p>
+      <div class="icon-links">
+        <a href="https://vjysupermacy.wordpress.com/"><i class="bi bi-globe"></i></a>
+        <a href="https://www.instagram.com/emcee_vjy"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="card venture">
+      <h3>GLOWCORE</h3>
+      <p>Beauty brand focused on skincare and confidence.</p>
+      <div class="icon-links">
+        <a href="https://glowcoreltd.onrender.com/"><i class="bi bi-globe"></i></a>
+        <a href="https://www.instagram.com/glowcore_ltd"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="card venture">
+      <h3>THE BOSS FOUNDATION</h3>
+      <p>Youth-led NGO supporting social causes.</p>
+      <div class="icon-links">
+        <a href="https://bossfdn.netlify.app/"><i class="bi bi-globe"></i></a>
+        <a href="https://www.instagram.com/thebossfdn"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section reveal">
+  <h2>Certifications</h2>
+
+  <div class="cert-controls">
+    <button id="certPrev"><i class="bi bi-chevron-left"></i></button>
+    <button id="certNext"><i class="bi bi-chevron-right"></i></button>
+  </div>
+
+  <div class="cert-slider" id="certSlider">
+
+    <div class="cert">
+      <img src="images/certificates/aws.png" alt="AWS Certificate">
+      <h3>Cloud Concepts</h3>
+      <p>Linkedin Learning</p>
+    </div>
+
+    <div class="cert">
+      <img src="images/certificates/python.png" alt="Python Certificate">
+      <h3>Advanced Diploma In Python Programming </h3>
+      <p>Computer Software College</p>
+    </div>
+
+    <div class="cert">
+      <img src="images/certificates/hackerrank.png" alt="HackerRank">
+      <h3>Python Basics</h3>
+      <p>HackerRank</p>
+    </div>
+
+    <div class="cert">
+      <img src="images/certificates/Vijey Prasanna.jpg" alt="Excel">
+      <h3>Investor Education Advanced</h3>
+      <p>NISM</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="section reveal contact-section">
+  <canvas id="contact-bg"></canvas>
+
+  <h2>Get in Touch</h2>
+
+  <div class="contact-info">
+    <p><i class="bi bi-instagram"></i> @vjysupermacy</p>
+    <p><i class="bi bi-envelope"></i> vjysupermacy@gmail.com</p>
+    <p><i class="bi bi-telephone"></i> +91 91500 59199</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Vijey Prasanna • Built with ❤️
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
