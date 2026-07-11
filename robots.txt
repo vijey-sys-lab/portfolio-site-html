@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vijey-prasanna.onrender.com/sitemap.xml
